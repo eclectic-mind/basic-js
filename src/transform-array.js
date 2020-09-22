@@ -1,11 +1,15 @@
 const CustomError = require("../extensions/custom-error");
 
 module.exports = function transform(arr) {
-  if (!arr instanceof Array) {
+  throw new CustomError('Not implemented');
+  // remove line with error and write your code here
+
+
+  /*if (!arr instanceof Array) {
     throw new CustomError('Error');
   }
   let result = [];
-  /* let i = 0;
+   let i = 0;
   while (i < arr.length) {
     if (typeof arr[i] === Number) {
       console.log('просто число ', arr[i]);
@@ -35,6 +39,6 @@ module.exports = function transform(arr) {
         i += 1;
       }
     }
-  }*/
-  return result;
+  }
+  return result;*/
 };
