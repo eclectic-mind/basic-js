@@ -8,8 +8,6 @@ module.exports = function getSeason(date) {
     throw new CustomError('Not implemented');
   } else {
     let month = date.getMonth();
-    console.log(date);
-    console.log(month);
     if (month >= 2 && month < 5) {
       return 'spring';
     } else if (month >= 5 && month < 8) {
